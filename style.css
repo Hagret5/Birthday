@@ -726,13 +726,14 @@ div#video.active {
 
   /* Glowing HAPPY BIRTHDAY ZINEB ❤️: top-left */
   .icons {
-    top: 70px;
+    position: fixed !important;
+    top: 45px !important;
     left: 16px;
-    right: auto;
-    width: max-content;
-    max-width: calc(100vw - 32px);
-    transform: rotate(-20deg);
-    transform-origin: top left;
+    right: auto !important;
+    z-index: 60 !important;
+    width: max-content !important;
+    max-width: calc(100vw - 32px) !important;
+   transform: none !important;
   }
 
   .icons .row span {
