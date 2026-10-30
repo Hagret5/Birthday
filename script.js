@@ -503,3 +503,9 @@ function startBirthdayDialogue() {
   // Begin shortly after the gift reveal.
   setTimeout(showNextMessage, 500);
 }
+window.addEventListener('resize',function () {
+	cw = window.innerWidth ;
+	ch = window.innerHeight ;
+	canvas.width =cw;
+	canvas.height =ch;
+});
