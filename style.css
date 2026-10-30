@@ -680,7 +680,7 @@ div#video.active {
   }
 
   /* Beach artwork scales rather than staying huge */
-  #beach {
+  div#beach {
     background-size: contain;
     background-position: bottom center;
   }
