@@ -615,49 +615,45 @@ div#video.active {
     transform:none !important;
 }
 /* ===== Mobile fixes ===== */
+/* Position birthday animation INSIDE the TV */
 @media (max-width: 999px) {
-  html, body {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
+  div#video {
+    position: absolute !important;
 
-  /* Name animation: center it instead of using fixed right/bottom */
-  #video {
-    right: 50% !important;
-    bottom: 32% !important;
-    left: auto !important;
-    transform: translateX(50%);
-    width: min(88vw, 320px) !important;
-    height: auto !important;
-    min-height: 150px;
-    padding: 12px;
-    z-index: 20;
+    left: 76% !important;
+    top: 72% !important;
+    right: auto !important;
+    bottom: auto !important;
+
+    transform: translate(-50%, -50%) !important;
+
+    width: 34vw !important;
+    height: 20vw !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    z-index: 20 !important;
   }
 
   #video .zineb-stage {
     width: 100% !important;
-    height: auto !important;
-    min-height: 130px;
-    padding: 10px;
-    border-radius: 14px;
+    height: 100% !important;
+    min-height: 0 !important;
+    padding: 2px !important;
+    background: #0b0b12 !important;
+    border-radius: 0 !important;
   }
 
   #video .birthday-title {
-    font-size: clamp(15px, 4.6vw, 22px);
-    margin-bottom: 8px;
+    font-size: clamp(7px, 2.5vw, 14px) !important;
+    margin: 0 !important;
   }
 
   #video #zineb-word {
-    font-size: clamp(26px, 9vw, 48px);
+    font-size: clamp(12px, 4vw, 25px) !important;
   }
-
-  /* Keep the name inside the screen */
-  #word,
-  #zineb-word {
-    max-width: 100%;
-    overflow-wrap: anywhere;
-  }
+}
 
   /* Moon: move away from the right edge */
   .moon {
